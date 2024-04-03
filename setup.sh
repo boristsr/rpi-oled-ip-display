@@ -1,5 +1,7 @@
 #!/bin/bash
 
+apt-get install -y python3-dev
+
 # Copy the files to the correct location
 mkdir /usr/local/bin/rpi-oled-ip-display
 cp display_ip.py /usr/local/bin/rpi-oled-ip-display/
@@ -30,4 +32,4 @@ chmod 664 /etc/systemd/system/rpi-oled-ip-display.service
 
 # Reload the daemons and Enable the service
 systemctl daemon-reload
-systemctl enable disk-space-check.service
+systemctl enable rpi-oled-ip-display.service
