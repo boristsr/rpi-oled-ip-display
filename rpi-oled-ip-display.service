@@ -1,0 +1,9 @@
+[Unit]
+After=network.target
+
+[Service]
+WorkingDirectory=/usr/local/bin/rpi-oled-ip-display/
+ExecStart=/usr/local/bin/rpi-oled-ip-display/display_ip.sh
+
+[Install]
+WantedBy=default.target
