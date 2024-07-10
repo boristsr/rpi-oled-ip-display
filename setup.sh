@@ -33,3 +33,4 @@ chmod 664 /etc/systemd/system/rpi-oled-ip-display.service
 # Reload the daemons and Enable the service
 systemctl daemon-reload
 systemctl enable rpi-oled-ip-display.service
+systemctl start rpi-oled-ip-display.service
